@@ -1,0 +1,16 @@
+<h1>my Due list</h1>
+<a href="{% url 'task_new' %}">Add To Due</a>
+
+<table>
+  <tr>
+    <th>Nursery To Dues</th>
+  </tr>
+  {% for task in object_list %}
+  <tr>
+    <td>{{ task.title }}</td>
+    <td><a href="{% url 'task' task.id %}">View</a></td>
+  </tr>
+  {% empty %}
+    <h5>No Baby Dues!</h5>
+  {% endfor %}
+</table>

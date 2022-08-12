@@ -1,0 +1,8 @@
+<h2>task from</h2>
+
+<form action="" method="POST" >
+  {% csrf_token %}
+  {{form.as_p}}
+  {% comment %} <input type="text" name="task" placeholder="Nursery To Due" required> {% endcomment %}
+  <input type="submit" name="Submit!" value="Submit">
+</form>
