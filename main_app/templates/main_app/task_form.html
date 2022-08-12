@@ -1,4 +1,8 @@
-<h2>task from</h2>
+{% extends 'main_app/base.html' %} 
+{% block content %}
+
+
+<h2>Your To Due</h2>
 <a href="{% url 'task' %}">Go Back</a>
 <form action="" method="POST" >
   {% csrf_token %}
@@ -6,3 +10,5 @@
   {% comment %} <input type="text" name="task" placeholder="Nursery To Due" required> {% endcomment %}
   <input type="submit" name="Submit!" value="Submit">
 </form>
+
+{% endblock content  %}

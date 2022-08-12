@@ -1,3 +1,6 @@
+{% extends 'main_app/base.html' %} 
+{% block content %}
+
 <h1>Sign Up for Nursery To Due!</h1>
 
 <form method="POST">
@@ -6,4 +9,6 @@
   <input type="submit" value="Sign Up" />
 </form>
 
-<p>Already signed up?<a href="">Login</a></p>
+<p>Already signed up?<a href="{% url 'login' %}">Login</a></p>
+
+{% endblock content  %}

@@ -1,0 +1,47 @@
+body {
+  background-color: #ccd8d0;
+  font-family: 'Shadows Into Light', cursive;
+  padding-top: 50px;
+}
+.container {
+  max-width: 550px;
+  margin: auto;
+  background-color: #f2c9cd;
+  -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+  box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+a,
+p {
+  color: #4b5156
+}
+
+a {
+  text-decoration: none;
+  padding: 12px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(90deg, #1098f7 0%, #1098f7 43%, #1098f7 100%);
+}
+.header-nav a {
+  color: rgb(247, 247, 247);
+}
+.header-nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
+td {
+  padding-right: 20px;
+  font-size: larger;
+}

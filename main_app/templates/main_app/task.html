@@ -1,1 +1,9 @@
-<h1>Due Deatail : {{ task }}</h1>
+{% extends 'main_app/base.html' %} 
+{% block content %}
+
+<h1>Due Details :</h1>
+<h2>{{ task }}</h2>
+<h5>{{ task.description }}</h5>
+<p>{{ task.completed }}</p>
+
+{% endblock content  %}
