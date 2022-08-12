@@ -9,6 +9,8 @@
   <tr>
     <td>{{ task.title }}</td>
     <td><a href="{% url 'task' task.id %}">View</a></td>
+    <td><a href="{% url 'task_edit' task.id %}">Edit</a></td>
+    <td><a href="{% url 'task_delete' task.id %}">Delete</a></td>
   </tr>
   {% empty %}
     <h5>No Baby Dues!</h5>

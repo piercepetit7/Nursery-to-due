@@ -19,5 +19,12 @@ class DueCreate(CreateView):
   fields = '__all__'
   success_url = '/'
 
+class DueUpdate(UpdateView):
+  model = Task
+  fields = '__all__'
+  success_url = '/'
 
-
+class DueDelete(DeleteView):
+  model = Task
+  context_object_name = 'task'
+  success_url = '/'
